@@ -16,12 +16,12 @@ def needSyncFile = project.properties['needSyncFile'];
 println("baseFile ==> " + baseFile);
 println("needSyncFile ==> " + needSyncFile);
 
-def owner = 'tzhong';
-def repo = 'suite-deployer';
+def owner = 'github username';
+def repo = 'repo name';
 def branch = 'master';
-def token = "0e90d45adb96852e64022640daab481dbfcafa20";
+def token = "github OAuth token";
 
-def baseURI = "https://github.houston.softwaregrp.net/api/v3";
+def baseURI = "https://github.com/api/v3";
 
 def jsonSlurper = new JsonSlurper();
 //get the sha & content of [needSyncFile] in [owner/repo/branch].
